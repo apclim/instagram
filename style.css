@@ -1,71 +1,152 @@
-<html>
-    <head></head>
-    <body>
-        <style>
-            h2 {color: red;}.highlight{
-    border:solid;
-}#profile{border: solid;
-border-color: blue;}
-        </style>
-        <div>
-        <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"/>
-        <input type="search" value="검색"/>
-        <div/>
-    <div id="profile">
-        <img src="image/profile.jpg" width="50px"/>
-    <div>
-        <h2>bibim_adventure</h2>
-       <button> 프로필 편집</button>
-     </div>
-    </div>
-    <div>
-       <p>
-       <strong>김진혁 (Jinhyeok Kim)
-       </strong><br/>
-       
-        마케터
-    </p>
-    <p> 
-        <a href="https://blog.naver.com/dudgur111">
-            go to bibimland
-        </a></div>
-      </p>
-    </div>
-    </div>
-    <div class="highlight">
-    <div><img src="image/hl 1.jpg" height="35px"/></div>
-    <div>
-        😃
-    </div>
-</div>
-<div class="highlight">
-<div><img src="image/hl 2.jpg" height="35px"/>
-    </div>
-        <div>
-            😍
-            </div>
-        </div>
-         게시물<br/>
-         133
-        </div>
-        <div>
-        팔로워<br/>
-        408
-    </div>
-    <div>
-        팔로우<br/>
-        189
-    </div>
-</div>
-<div>아이콘이 들어갈 자리</div>
-<div><img src="image/thumbnails/1.jpg" width="32%/">
-    <img src="image/thumbnails/2.jpg" width="32%/">
-    <img src="image/thumbnails/3.jpg" width="32%/">
-    <img src="image/thumbnails/4.jpg" width="32%/">
-    <img src="image/thumbnails/5.jpg" width="32%/">
-    <img src="image/thumbnails/6.jpg" width="32%/">
-    <img src="image/thumbnails/7.jpg" width="32%/">
-    <img src="image/thumbnails/8.jpg" width="32%/">
-    <img src="image/thumbnails/9.jpg" width="32%/"></div>
-    </body>
-</html>
+body {
+    font-size: 3vw;
+}
+
+
+.thumnail_grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.thumnail {
+    width: 100%;
+} 
+
+#stat_bar {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    border-top: 0.1px solid gray;
+    border-bottom: 0.1px solid gray;
+
+    margin-bottom:5px;
+    margin-top:5px;
+}
+
+.stat {
+    text-align:center;
+}
+
+.circle_pic {
+    border: solid white 1px;
+    border-radius: 50%;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#profile_pic {
+    width: 15vw;
+    height: 15vw;
+}
+
+.highlight_pic {
+    width: 10vw;
+    height: 10vw;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#highlight_area {
+    display: grid;
+    grid-template-columns: 12vw 12vw 1fr;
+}
+
+.highlight {
+    text-align: center;
+}
+
+#profile {
+    display: grid;
+    grid-template-columns: 1fr 3.5fr;
+}
+
+#profile_info{
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+
+    height: 15vw;
+}
+
+#id {
+    font-size: 6vw;
+    font-weight: 100;
+}
+
+button {
+    height: 80%;
+    width: 95%;
+
+    font-size:3vw;
+    background-color: white;
+    border: solid gray 1px;
+    border-radius: 3px;
+}
+
+#top {
+    display:grid;
+    grid-template-columns: 4fr 7fr 5fr;
+    height: 10vw;
+    min-height: 40px;
+
+    border-bottom: solid gray 0.1px;
+    margin-bottom: 3vw;
+}
+
+#top img {
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 100%;
+    object-fit: contain;
+
+}
+
+#top input {
+    height: 60%;
+    width: 95%;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    text-align: center;
+    background-color: rgb(250, 250, 250);
+
+    border: solid gray 1px;
+    border-radius: 3px;
+
+    font-size: 3vw;
+    font-weight: 100;
+}
+
+i {
+    color:gray;
+}
+
+
+#top i {
+    font-size: 4vw;
+}
+
+#top div {
+    text-align:center;
+    padding-top:3vw;
+}
+
+#sub_icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    text-align: center;
+    font-size: 5vw;
+    
+    height: 8vw;
+}
+
+.selected{
+    border-bottom: solid gray 3px;
+}
